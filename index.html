@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="nav">
+        <div class="flex-container">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li>Find Connections: <input id="search" type="text"></li>
+                <li>
+                    <button class="btn">Sign Out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-container main">
+        <div class="col-2">
+            <div class="card user-card">
+                <div class="cardHeader" id="jane">
+                    <img src="./images/images/jane-m.jpg" alt="jane" class="avatar-m">
+                </div>
+                <div class="cardBody">
+                    <h1 class="cardName"> Jane Doe</h1>
+                    <h3><img class="icon-s" src="icons/icons/map-marker.png" alt="Ubication">Seatle</h3>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                    <p><img class="icon-s" src="icons/icons/gear.png" alt="gear"><a href="#">Edit Profile</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardHeader">
+                    <h3>Education</h3>
+                </div>
+                <div class="cardBody">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p class="dates">Dec 2019 - Mar 2020</p>
+                    <p>Triple Belt in Python, MERN, and C#...</p>
+                </div>
+            </div>   
+        </div>
+        <div class="col-1">
+            <div class="card">
+                <div class="cardHeader">
+                    <span id="connectionRequestNumber" class="badge">2</span>
+                    <h3>Connection Request</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <span>
+                            <img src="images/images/todd-s.jpg" alt="todd" class="avatar-s">
+                            Todd E
+                        </span>
+                        <span class="buttons">
+                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon">
+                            <img src="icons/icons/close-circle.png" alt="close" class="icon">
+                        </span>
+                    </li>
+                    <li class="card-list-item">
+                        <span>
+                            <img src="images/images/phil-s.jpg" alt="Phil" class="avatar-s">
+                            Phil E
+                        </span>
+                        <span class="buttons">
+                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon">
+                            <img src="icons/icons/close-circle.png" alt="close" class="icon">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="cardHeader">
+                    <span id="totalConnections" class="badge">418</span>
+                    <h3>Your Connections</h3>
+                </div>
+                <ul class="card-list" id="myConnections">
+                    <li class="card-list-item start">
+                        <img src="images/images/adrien-s.jpg" alt="adrien" class="avatar-s">
+                        Adrien D
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/images/anne-s.jpg" alt="anne" class="avatar-s">
+                        Anne J
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/images/alayne-s.jpg" alt="alayne" class="avatar-s">
+                        Alayne T
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/images/arry-s.jpg" alt="arry" class="avatar-s">
+                        Arry Y
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
