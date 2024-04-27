@@ -35,7 +35,7 @@
                     <h3><img class="icon-s" src="icons/icons/map-marker.png" alt="Ubication">Seatle</h3>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
-                    <p><img class="icon-s" src="icons/icons/gear.png" alt="gear"><a href="#">Edit Profile</a></p>
+                    <p><img class="icon-s" src="icons/icons/gear.png" alt="gear"><a href="#" onclick="changeName()">Edit Profile</a></p>
                 </div>
             </div>
             <div class="card">
@@ -62,8 +62,8 @@
                             Todd E
                         </span>
                         <span class="buttons">
-                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon" onclick="ConnectionRequestadd(this)">
+                            <img src="icons/icons/close-circle.png" alt="close" class="icon" onclick="removeConnectionRequest(this)">
                         </span>
                     </li>
                     <li class="card-list-item">
@@ -72,8 +72,8 @@
                             Phil E
                         </span>
                         <span class="buttons">
-                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/icons/accept-circle.png" alt="accept" class="icon" onclick="ConnectionRequestadd(this)">
+                            <img src="icons/icons/close-circle.png" alt="close" class="icon" onclick="removeConnectionRequest(this)">
                         </span>
                     </li>
                 </ul>
@@ -107,5 +107,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
